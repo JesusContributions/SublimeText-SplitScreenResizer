@@ -1,4 +1,11 @@
 """
+SplitScreen-Resizer v1.0.0
+by Jesus Leon
+http://vizionika.net
+http://iamjessu.com
+
+A fork of:
+
 SplitScreen v1.0.0
 by Nick Fisher
 https://github.com/spadgos/sublime-SplitScreen
@@ -15,12 +22,20 @@ def addUp(lst):
     return out
 
 
-class SplitScreenCommand(sublime_plugin.WindowCommand):
-    def run(self):
-        self.window.show_input_panel("Split ratios", "70:30", self.splitWindow, None, None)
+class SplitScreenResizerCommand(sublime_plugin.WindowCommand):
+    def run(self, side):
+        settings = view.settings()
 
-    def splitWindow(self, inp):
-        parts = re.split("\\s*,\\s*", inp)
+        if side == "left":
+            ratio = settings.get('ratio_left')
+        else if side == "right":
+            ratio = settings.get('ratio_right')
+
+
+        """
+        Keep original code in case we want to add vertical resizing.
+        """
+        parts = re.split("\\s*,\\s*", ratio)
 
         horiz = parts[0] or "1"
         vert = parts[1] or "1" if len(parts) > 1 else "1"

@@ -1,0 +1,5 @@
+{
+	// Size ratio (default: "8:2").
+	"ratio_left": "8:2",
+	"ratio_right": "2:8"
+}

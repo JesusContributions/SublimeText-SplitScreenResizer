@@ -1,0 +1,4 @@
+[
+	{ "keys": ["super+ctrl+left"], "command": "split_screen_resizer", "args": {"side": "left"} },
+  { "keys": ["super+ctrl+right"], "command": "split_screen_resizer", "args": {"side": "right"} }
+]
