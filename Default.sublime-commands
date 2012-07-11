@@ -1,19 +1,5 @@
 [
     {
-        "caption": "Preferences: sublime-SplitScreen-Resizer File Settings – Default",
-        "command": "open_file",
-        "args": {
-            "file": "${packages}/Terminal/Base File.sublime-settings"
-        }
-    },
-    {
-        "caption": "Preferences: sublime-SplitScreen-Resizer File Settings – User",
-        "command": "open_file",
-        "args": {
-            "file": "${packages}/User/Base File.sublime-settings"
-        }
-    },
-    {
         "caption": "Preferences: sublime-SplitScreen-Resizer Key Bindings – Default",
         "command": "open_file",
         "args": {

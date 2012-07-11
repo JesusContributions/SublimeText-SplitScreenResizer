@@ -1,8 +1,7 @@
 """
 SplitScreen-Resizer v1.0.0
 by Jesus Leon
-http://vizionika.net
-http://iamjessu.com
+https://github.com/iamjessu/sublime-SplitScreen-Resizer
 
 A fork of:
 
@@ -23,13 +22,13 @@ def addUp(lst):
 
 
 class SplitScreenResizerCommand(sublime_plugin.WindowCommand):
-    def run(self, side):
-        settings = view.settings()
+    def run(self, side, ratio):
 
         if side == "left":
-            ratio = settings.get('ratio_left')
-        else if side == "right":
-            ratio = settings.get('ratio_right')
+            ratio_val = ratio
+
+        if side == "right":
+            ratio_val = ratio
 
 
         """

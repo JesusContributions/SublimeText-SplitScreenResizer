@@ -1,4 +1,18 @@
 [
-	{ "keys": ["super+ctrl+left"], "command": "split_screen_resizer", "args": {"side": "left"} },
-  { "keys": ["super+ctrl+right"], "command": "split_screen_resizer", "args": {"side": "right"} }
+	{
+		"keys": ["super+ctrl+left"], 
+		"command": "split_screen_resizer", 
+		"args": {
+							"side": "left", 
+							"ratio": "8:2"
+						} 
+	},
+  { 
+  	"keys": ["super+ctrl+right"], 
+  	"command": "split_screen_resizer", 
+  	"args": {
+  						"side": "right", 
+  						"ratio":"2:8"
+  					} 
+  }
 ]

@@ -16,16 +16,6 @@
                         "children":
                         [
                             {
-                                "command": "open_file", 
-                                "args": {"file": "${packages}/sublime-SplitScreen-Resizer/Base File.sublime-settings"},
-                                "caption": "Settings – Default"
-                            },
-                            {
-                                "command": "open_file", 
-                                "args": {"file": "${packages}/User/Base File.sublime-settings"},
-                                "caption": "Settings – User"
-                            },
-                            {
                                 "command": "open_file",
                                 "args": {
                                     "file": "${packages}/sublime-SplitScreen-Resizer/Default (Windows).sublime-keymap",
