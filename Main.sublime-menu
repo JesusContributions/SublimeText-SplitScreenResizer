@@ -12,12 +12,12 @@
                 "children":
                 [
                     {
-                        "caption": "SplitScreen-Resizer",
+                        "caption": "sublime-SplitScreen-Resizer",
                         "children":
                         [
                             {
                                 "command": "open_file", 
-                                "args": {"file": "${packages}/SplitScreen-Resizer/Base File.sublime-settings"},
+                                "args": {"file": "${packages}/sublime-SplitScreen-Resizer/Base File.sublime-settings"},
                                 "caption": "Settings – Default"
                             },
                             {
@@ -28,7 +28,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/SplitScreen-Resizer/Default (Windows).sublime-keymap",
+                                    "file": "${packages}/sublime-SplitScreen-Resizer/Default (Windows).sublime-keymap",
                                     "platform": "Windows"
                                 },
                                 "caption": "Key Bindings – Default"
@@ -36,7 +36,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/SplitScreen-Resizer/Default (OSX).sublime-keymap",
+                                    "file": "${packages}/sublime-SplitScreen-Resizer/Default (OSX).sublime-keymap",
                                     "platform": "OSX"
                                 },
                                 "caption": "Key Bindings – Default"
@@ -44,7 +44,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/SplitScreen-Resizer/Default (Linux).sublime-keymap",
+                                    "file": "${packages}/sublime-SplitScreen-Resizer/Default (Linux).sublime-keymap",
                                     "platform": "Linux"
                                 },
                                 "caption": "Key Bindings – Default"
