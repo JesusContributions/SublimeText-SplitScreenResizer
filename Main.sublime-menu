@@ -12,13 +12,13 @@
                 "children":
                 [
                     {
-                        "caption": "sublime-SplitScreen-Resizer",
+                        "caption": "SplitScreen-Resizer",
                         "children":
                         [
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/sublime-SplitScreen-Resizer/Default (Windows).sublime-keymap",
+                                    "file": "${packages}/SplitScreen-Resizer/Default (Windows).sublime-keymap",
                                     "platform": "Windows"
                                 },
                                 "caption": "Key Bindings – Default"
@@ -26,7 +26,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/sublime-SplitScreen-Resizer/Default (OSX).sublime-keymap",
+                                    "file": "${packages}/SplitScreen-Resizer/Default (OSX).sublime-keymap",
                                     "platform": "OSX"
                                 },
                                 "caption": "Key Bindings – Default"
@@ -34,7 +34,7 @@
                             {
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/sublime-SplitScreen-Resizer/Default (Linux).sublime-keymap",
+                                    "file": "${packages}/SplitScreen-Resizer/Default (Linux).sublime-keymap",
                                     "platform": "Linux"
                                 },
                                 "caption": "Key Bindings – Default"
