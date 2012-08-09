@@ -1,13 +1,19 @@
 """
-SplitScreen-Resizer v1.0.0
+SplitScreen-Resizer v2.0.0
 by Jesus Leon
 https://github.com/iamjessu/sublime-SplitScreen-Resizer
 
 A fork of:
 
-SplitScreen v1.0.0
-by Nick Fisher
-https://github.com/spadgos/sublime-SplitScreen
+    SplitScreen v1.0.0
+    by Nick Fisher
+    https://github.com/spadgos/sublime-SplitScreen
+
+Combined with the plugin:
+
+    Split Navigation
+    by Linus Oleander
+    https://github.com/oleander/sublime-split-navigation
 """
 import sublime_plugin
 import re
@@ -22,13 +28,26 @@ def addUp(lst):
 
 
 class SplitScreenResizerCommand(sublime_plugin.WindowCommand):
-    def run(self, side, ratio):
+    def run(self, side, ratio, autofocus):
+        win = self.window
+        num = win.num_groups()
+        act = win.active_group()
 
         if side == "left":
             ratio_val = ratio
+            act = act - 1
 
         if side == "right":
             ratio_val = ratio
+            act = act + 1
+
+        # By keeping it as modulus operation we ensure that:
+        #     - It continues focusing the next/previous column in case we're 
+        #       working with more than 2 columns.
+        #     - It acts as a loop, focusing the first/last column when the
+        #       last/first is reached respectively.
+        if autofocus:
+            win.focus_group(act % num)
 
 
         """

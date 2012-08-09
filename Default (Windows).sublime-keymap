@@ -4,7 +4,8 @@
 		"command": "split_screen_resizer", 
 		"args": {
 							"side": "left", 
-							"ratio": "8:2"
+							"ratio": "8:2", 
+							"autofocus": true
 						} 
 	},
   { 
@@ -12,7 +13,8 @@
   	"command": "split_screen_resizer", 
   	"args": {
   						"side": "right", 
-  						"ratio":"2:8"
+  						"ratio":"2:8", 
+  						"autofocus":true
   					} 
   }
 ]
