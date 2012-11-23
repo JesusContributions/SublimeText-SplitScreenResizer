@@ -1,0 +1,8 @@
+{
+	//Disable mouse autofocus
+	"disable_mouse_focus" : false,
+
+	//column ratios (for now you also need to define these ratios in Key bindings )
+	"ratio_left"  : "6.5:3.5",
+ 	"ratio_right" : "3.5:6.5"
+}
