@@ -3,6 +3,9 @@ SplitScreen-Resizer v2.0.0
 by Jesus Leon
 https://github.com/iamjessu/sublime-SplitScreen-Resizer
 
+Contributors:
+Artis Raugulis <artis@devart.lv>
+
 A fork of:
 
     SplitScreen v1.0.0
@@ -15,7 +18,7 @@ Combined with the plugin:
     by Linus Oleander
     https://github.com/oleander/sublime-split-navigation
 """
-import sublime_plugin
+import sublime, sublime_plugin
 import re
 
 
@@ -25,6 +28,37 @@ def addUp(lst):
         out.append(out[-1] + i)
 
     return out
+
+class PanelChangedCommand(sublime_plugin.EventListener):
+    last_work_group = None
+    settings = None
+    def on_activated(self, view):
+        #load settings
+        if self.settings == None:
+            self.settings = sublime.load_settings("splitscreen-resizer.sublime-settings")
+
+        #if mouse focus disabled - exit ..
+        if self.settings.get('disable_mouse_focus'):
+            return 0
+
+        #current active group
+        current_active_group = view.window().active_group()
+
+        #Working group not changed - doing nothing ...
+        if self.last_work_group == current_active_group:
+            return 0
+
+        #update last work group
+        self.last_work_group = current_active_group
+
+        #by default we show left side ...
+        args = {"side":"left", "ratio":self.settings.get('ratio_left'), "autofocus":False}
+        #if right side active - update args to right side version
+        if(current_active_group == 1):
+            args = {"side":"left", "ratio":self.settings.get('ratio_right'), "autofocus":False}
+
+        win = view.window()
+        win.run_command("split_screen_resizer", args)
 
 
 class SplitScreenResizerCommand(sublime_plugin.WindowCommand):
