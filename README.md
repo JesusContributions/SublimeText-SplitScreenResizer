@@ -20,7 +20,7 @@ This plugin combines functionalities from these great plugins:
 
 Contributors
 -------
-Artis Raugulis <artis@devart.lv>
+* [ArtisR][ArtisR_link] (Artis Raugulis) - Added mouse focus
 
 Updates
 -------
@@ -71,3 +71,4 @@ For example:
 [spadgos_link]: https://github.com/spadgos
 [splitnavigation_link]: https://github.com/oleander/sublime-split-navigation
 [oleander_link]: https://github.com/oleander
+[ArtisR_link]: https://github.com/ArtisR
