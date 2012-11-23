@@ -18,6 +18,9 @@ This plugin combines functionalities from these great plugins:
 * [SplitScreen][splitscreen_link] by [spadgos][spadgos_link] (Nick Fisher).
 * [Split Navigation][splitnavigation_link] by [oleander][oleander_link] (Linus Oleander).
 
+Contributors
+-------
+Artis Raugulis <artis@devart.lv>
 
 Updates
 -------
