@@ -18,6 +18,9 @@ This plugin combines functionalities from these great plugins:
 * [SplitScreen][splitscreen_link] by [spadgos][spadgos_link] (Nick Fisher).
 * [Split Navigation][splitnavigation_link] by [oleander][oleander_link] (Linus Oleander).
 
+Contributors
+-------
+* [ArtisR][ArtisR_link] (Artis Raugulis) - Added mouse focus
 
 Updates
 -------
@@ -68,3 +71,4 @@ For example:
 [spadgos_link]: https://github.com/spadgos
 [splitnavigation_link]: https://github.com/oleander/sublime-split-navigation
 [oleander_link]: https://github.com/oleander
+[ArtisR_link]: https://github.com/ArtisR

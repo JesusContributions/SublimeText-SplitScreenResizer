@@ -18,6 +18,21 @@
                             {
                                 "command": "open_file",
                                 "args": {
+                                    "file": "${packages}/SplitScreen-Resizer/splitscreen-resizer.sublime-settings"
+                                },
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/User/splitscreen-resizer.sublime-settings"
+                                },
+                                "caption": "Settings – User"
+                            },
+                            { "caption": "-" },
+                            {
+                                "command": "open_file",
+                                "args": {
                                     "file": "${packages}/SplitScreen-Resizer/Default (Windows).sublime-keymap",
                                     "platform": "Windows"
                                 },
