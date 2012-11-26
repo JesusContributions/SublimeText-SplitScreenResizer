@@ -17,11 +17,13 @@ So if you are a full-keyboard coder or a mouse lover, this plugin got you covere
 Credits
 -------
 
-Created by [Jesus Leon][iamjessu_link].
+**Created by**
+
+Jesus Leon ([@iamjessu][iamjessu_link]).
 
 **Contributors:**
 
-* [ArtisR][ArtisR_link] (Artis Raugulis) - Added mouse focus
+* [ArtisR][ArtisR_link] (Artis Raugulis) - Added mouse focus.
 
 This plugin combines functionalities from these plugins:
 
@@ -80,7 +82,7 @@ For example:
 
 
 [sublime_link]: http://www.sublimetext.com/
-[iamjessu_link]: https://github.com/iamjessu
+[iamjessu_link]: https://twitter.com/iamjessu
 [splitscreen_link]: https://github.com/spadgos/sublime-SplitScreen
 [spadgos_link]: https://github.com/spadgos
 [splitnavigation_link]: https://github.com/oleander/sublime-split-navigation
