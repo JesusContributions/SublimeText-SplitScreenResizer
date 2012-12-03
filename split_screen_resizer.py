@@ -43,6 +43,10 @@ class PanelChangedCommand(sublime_plugin.EventListener):
         if self.settings.get('resize_on_focus') == False:
             return 0
 
+        # If theres only one group in current window. Do nothing.
+        if view.window().num_groups() == 1:
+            return 0
+
         # Current active group.
         current_active_group = view.window().active_group()
 
