@@ -80,6 +80,10 @@ class SplitScreenResizerCommand(sublime_plugin.WindowCommand):
         num = win.num_groups()
         act = win.active_group()
 
+        #If theres only one group in current window. Do nothing.
+        if num == 1:
+            return 0
+
         if side == "left":
             ratio = self.settings.get('ratio_left')
             act = act - 1
